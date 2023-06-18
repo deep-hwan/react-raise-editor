@@ -1,7 +1,14 @@
 {
   "name": "react-raise-editor",
   "version": "0.1.0",
-  "private": true,
+ "private": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -46,7 +53,7 @@
   "description": "Simple Editor Handler with textarea in react",
   "repository": {
     "type": "git",
-    "url": "https://github.com/deep-hwan/react-kakao-share.git"
+    "url": "https://github.com/deep-hwan/react-raise-editor.git"
   },
   "keywords": [
     "react",
