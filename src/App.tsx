@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useRef } from 'react'
+import {useRaiseEditor } from './lib';
 
-function App() {
+export default function App() {
+  const textRef = useRef<HTMLTextAreaElement | null>(null); 
+  const [text, setText] = useState<string>('');
+
+  useRaiseEditor({
+    state: text,
+    ref: textRef,
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <textarea ref={textRef} value={text} onChange={e => setText(e.target.value)}/>
+  )
 }
-
-export default App;
