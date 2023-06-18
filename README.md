@@ -21,7 +21,7 @@ Simple Editor Handler with textarea in react
 ## Simple Usage
 
 ### hooks 
-#### useRaiseEditor
+#### : useRaiseEditor
 
 Load the useRaiseEditor and pass it to state and ref, respectively.
 The hooks are hooks that provide the ability to **enter a textarea or to lengthen or decrease as much as the line is crossed** due to the amount of text is overflowing.
@@ -49,7 +49,7 @@ export default function App() {
 ---
 
 ### handler 
-#### handleLimitEnterEditor
+#### : handleLimitEnterEditor
 
 Load the useRaiseEditor and pass it to state and ref, respectively.
 The hooks are hooks that provide the ability to **enter a textarea or to lengthen or decrease as much as the line is crossed** due to the amount of text is overflowing.
